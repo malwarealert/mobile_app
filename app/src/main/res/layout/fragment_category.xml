@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:theme="@style/ThemeOverlay.Diplom.FullscreenContainer"
-    tools:context=".ChooseACaregory">
+    >
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -77,7 +76,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -199,6 +199,7 @@
                 </LinearLayout>
 
                 <ListView
+                    android:id="@+id/wordsListview"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginTop="16dp"
@@ -213,7 +214,6 @@
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
-            style="@style/Widget.Theme.Diplom.ButtonBar.Fullscreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
